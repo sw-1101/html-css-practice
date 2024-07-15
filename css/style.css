@@ -1,0 +1,180 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+.container {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (max-width: 1140px) {
+	.container {
+		width: auto;
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+}
+
+/* カフェアイコン関連のCSS */
+.cafeSE-title {
+    background-image: url(../img/mv_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-position: center center;
+}
+@media (max-width: 576px) {
+	.cafeSE-title {
+		background-image: url(../img/mv_sp.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+		height: 50vh;
+	}
+}
+.cafeSE-title__image {
+    display: flex;
+    align-items: center;
+}
+.cafeSE-title__image img {
+    width: 255px;
+}
+
+/* カフェ説明欄のCSS */
+.cafeSE-explanation {
+    background-color: #F7F7F7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.cafeSE-explanation p {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* おすすめメニュー欄のCSS */
+.cafeSE-recommend-menu {
+    padding-top: 40px;
+	padding-bottom: 40px;
+}
+.cafeSE-recommend-menu h2 {
+    font-weight: bold;
+    text-align: center;
+}
+.cafeSE-recommend-menu__content {
+    display: flex;
+    padding-top: 40px;
+    gap: 45px;
+}
+/* PC版で適用させたいCSS */
+@media (max-width: 1140px) {
+    .cafeSE-recommend-menu__content {
+        gap: 25px;
+        padding-top: 25px;
+    }
+}
+/* スマホ版で適用させたいCSS */
+@media (max-width: 576px) {
+    .cafeSE-recommend-menu__content {
+        flex-direction:  column;
+    }
+}
+.cafeSE-recommend-menu__pickup-item {
+    background-color: #eff4f5;
+    background-image: url(../img/checkmark.png);
+	background-repeat: no-repeat;
+    background-size: 36px 36px;
+    background-position: right 15px top 15px;
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* スマホ版で適用させたいCSS */
+@media (max-width: 576px) {
+
+}
+.cafeSE-recommend-menu__pickup-item h3 {
+	color: #325367;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+}
+.cafeSE-recommend-menu__pickup-item p {
+	padding-top: 25px;
+}
+.cafeSE-recommend-menu__picture {
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+/* 定番メニュー欄のCSS */
+.cafeSE-grand-menu {
+	background-color: #F7F7F7;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.cafeSE-grand-menu h2 {
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+}
+.cafeSE-grand-menu h3 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	border-bottom: 2px solid #538AAA;
+	padding-bottom: 6px;
+}
+.cafeSE-grand-menu th {
+	text-align: left;
+	font-weight: bold;
+	padding: 10px 0;
+	border-bottom: 1px solid #C5C5C5;
+	line-height: 1;
+}
+.cafeSE-grand-menu td {
+	padding: 10px 0;
+	border-bottom: 1px solid #C5C5C5;
+	text-align: right;
+	line-height: 1;
+}
+.cafeSE-grand-menu table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 15px;
+}
+.cafeSE-grand-menu__content {
+	display: flex;
+	gap: 60px;
+	padding-top: 40px;
+}
+@media (max-width: 1140px) {
+	.cafeSE-grand-menu__content {
+		padding-top: 25px;
+		gap: 40px;
+	}
+}
+@media (max-width: 576px) {
+	.cafeSE-grand-menu__content {
+		flex-direction: column;
+	}
+}
+.cafeSE-grand-menu__item {
+	flex: 1;
+}
+.cafeSE-grand-menu__item--lunch {
+	padding-top: 40px;
+}
+.cafeSE-grand-menu__item--lunch li {
+	line-height: 1;
+	padding-top: 20px;
+}
+.cafeSE-grand-menu__item--lunch ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 1.5em;
+}
